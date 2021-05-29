@@ -1,0 +1,42 @@
+.statistics {
+    margin-top: 20px;
+    border: 2px solid gray;
+    display: block;
+    width: 300px;
+    height: 140px;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Apple Symbols', serif;
+}
+
+
+
+
+
+.item {
+    width: 70px;
+}
+
+.statList {
+    display: flex;
+    justify-content: center;
+}
+
+.label {
+    padding: 10px;
+    display: block;
+    font-family: 'Apple Symbols', serif;
+    text-align: center;
+}
+
+.percentage {
+    display: block;
+    font-family: 'Apple Symbols', serif;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+

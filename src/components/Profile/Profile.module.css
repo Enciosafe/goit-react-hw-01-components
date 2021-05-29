@@ -1,0 +1,74 @@
+.profile {
+  width: 220px;
+  border: 2px solid gray;
+  padding: 15px;
+}
+
+.description {
+  border: 1px solid lightgray;
+  padding: 10px;
+}
+
+.avatar {
+  display: block;
+  width: 150px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.name {
+  font-family: 'Apple Symbols', serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+.tag {
+  border: 1px solid tomato;
+  font-family: 'Apple Symbols', serif;
+  color: gray;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.tag:hover {
+  cursor: pointer;
+  background-color: tomato;
+  color: black;
+}
+.location {
+  font-family: 'Apple Symbols', serif;
+  text-align: center;
+  color: gray;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  font-size: 13px;
+  text-align: center;
+}
+
+.label {
+  color: gray;
+  font-family: 'Apple Symbols', serif;
+}
+
+.quantity {
+  margin-top: 5px;
+  display: block;
+  font-size: 15px;
+  font-family: 'Apple Symbols', serif;
+  font-weight: bold;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
