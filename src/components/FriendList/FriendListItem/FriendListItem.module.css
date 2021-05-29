@@ -1,0 +1,32 @@
+
+.item {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.item:hover {
+    cursor: pointer;
+    background-color: cadetblue;
+}
+
+.avatar {
+    margin-top: 2px;
+}
+
+.name {
+    font-family: 'Apple Symbols', serif;
+    margin: 0;
+    font-size: 18px;
+}
+
+
+
+.status {
+    display: block;
+    font-family: 'Apple Symbols', serif;
+    margin-top: 5px;
+}
