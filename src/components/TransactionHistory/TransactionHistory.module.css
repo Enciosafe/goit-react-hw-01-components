@@ -1,0 +1,19 @@
+.transactionHistory {
+    border: 2px solid gray;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
+.type {
+    font-family: 'Apple Symbols', serif;
+}
+
+.amount {
+    font-family: 'Apple Symbols', serif;
+}
+
+.currency {
+    font-family: 'Apple Symbols', serif;
+}

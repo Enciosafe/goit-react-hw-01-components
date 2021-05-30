@@ -1,0 +1,17 @@
+
+.type {
+    font-family: 'Apple Symbols', serif;
+}
+
+.amount {
+    font-family: 'Apple Symbols', serif;
+}
+
+.amount:hover {
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.currency {
+    font-family: 'Apple Symbols', serif;
+}

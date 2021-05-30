@@ -8,11 +8,17 @@ const Statistics = ({ stats }) => {
 
   return (
     <section className={s.statistics}>
-      <h2 className={s.title} style={{ backgroundColor: `${randomColor()}`}} >Upload stats</h2>
+      <h2 className={s.title} style={{ backgroundColor: `${randomColor()}` }}>
+        Upload stats
+      </h2>
 
       <ul className={s.statList}>
         {stats.map(({ label, percentage, id }) => (
-          <li key={id} className={s.item} style={{ backgroundColor: `${randomColor()}`}}>
+          <li
+            key={id}
+            className={s.item}
+            style={{ backgroundColor: `${randomColor()}` }}
+          >
             <span className={s.label}>{label}</span>
             <span className={s.percentage}>{percentage}%</span>
           </li>
