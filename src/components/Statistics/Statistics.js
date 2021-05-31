@@ -1,17 +1,19 @@
 import React from 'react';
 import s from './Statistics.module.css';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
-
-
-const Statistics = ({ stats }) => {
-
+const Statistics = ({ stats, title }) => {
   return (
     <section className={s.statistics}>
-      <h2 className={s.title} style={{ backgroundColor: `${randomColor()}` }}>
-        Upload stats
-      </h2>
-
+      {title ? (
+        <h2 className={s.title} style={{ backgroundColor: `${randomColor()}` }}>
+          {title}
+        </h2>
+      ) : (
+        <h2 className={s.title} style={{ backgroundColor: `${randomColor()}` }}>
+          {null}
+        </h2>
+      )}
       <ul className={s.statList}>
         {stats.map(({ label, percentage, id }) => (
           <li
@@ -31,27 +33,17 @@ const Statistics = ({ stats }) => {
 export default Statistics;
 
 const randomColor = () => {
-    let col = Math.round(255.0*Math.random());
-    const r = col.toString(16);
-    col = Math.round(255.0*Math.random());
-    const g=col.toString(16);
-    col = Math.round(255.0*Math.random());
-    const b=col.toString(16);
-    col=`#${r}${g}${b}`;
-    return col;
-}
-
-Statistics.defaultProps = {
-    title: 'Upload stats',
+  let col = Math.round(255.0 * Math.random());
+  const r = col.toString(16);
+  col = Math.round(255.0 * Math.random());
+  const g = col.toString(16);
+  col = Math.round(255.0 * Math.random());
+  const b = col.toString(16);
+  col = `#${r}${g}${b}`;
+  return col;
 };
 
 Statistics.propTypes = {
-    label: PropTypes.string,
-    percentage: PropTypes.number
+  label: PropTypes.string,
+  percentage: PropTypes.number,
 };
-
-
-
-
-
-

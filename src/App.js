@@ -21,8 +21,9 @@ const App = () => {
         likes={user.stats.likes}
       />
       <Statistics stats={statisticalData} title="Upload stats" />
+      <Statistics stats={statisticalData} />
       <FriendList friends={friends} />
-      <TransactionHistory items={transactions}/>
+      <TransactionHistory items={transactions} />
     </div>
   );
 };
